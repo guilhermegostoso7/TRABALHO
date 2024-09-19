@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Suporte</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        @keyframes bounceIn {
+            0% {
+                transform: scale(0);
+                opacity: 0;
+            }
+            60% {
+                transform: scale(1.1);
+                opacity: 1;
+            }
+            100% {
+                transform: scale(1);
+            }
+        }
+
+        .support-item {
+            animation: bounceIn 0.5s ease forwards;
+            opacity: 0; /* Para garantir que a opacidade inicie em 0 */
+        }
+
+        /* Atraso para cada item, para uma animação em cascata */
+        .support-item:nth-child(1) {
+            animation-delay: 0.1s;
+        }
+
+        .support-item:nth-child(2) {
+            animation-delay: 0.2s;
+        }
+
+        .support-item:nth-child(3) {
+            animation-delay: 0.3s;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="menu">
+                <li><a href="index.html">Início</a></li>
+                <li class="dropdown">
+                    <a href="servicos.html">Serviços</a>
+                    <ul class="dropdown-content">
+                        <li><a href="consultoria.html">Consultoria</a></li>
+                        <li><a href="suporte.html">Suporte</a></li>
+                        <li><a href="#">Desenvolvimento</a></li>
+                    </ul>
+                </li>
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="support">
+            <h1>Suporte Técnico</h1>
+            <p>Estamos aqui para ajudar! Veja abaixo as opções de suporte disponíveis:</p>
+            <div class="support-options">
+                <div class="support-item">
+                    <h2>Suporte 24/7</h2>
+                    <p>Oferecemos assistência técnica 24 horas por dia, 7 dias por semana. Entre em contato a qualquer momento.</p>
+                </div>
+                <div class="support-item">
+                    <h2>Central de Ajuda</h2>
+                    <p>Acesse nossa Central de Ajuda para FAQs, tutoriais e guias de solução de problemas.</p>
+                </div>
+                <div class="support-item">
+                    <h2>Chat ao Vivo</h2>
+                    <p>Fale diretamente com um de nossos especialistas através do chat ao vivo em nosso site.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Sua Empresa. Todos os direitos reservados.</p>
+        <ul class="social-media">
+            <li><a href="https://facebook.com" target="_blank">Facebook</a></li>
+            <li><a href="https://twitter.com" target="_blank">Twitter</a></li>
+            <li><a href="https://instagram.com" target="_blank">Instagram</a></li>
+        </ul>
+    </footer>
+</body>
+</html>
